@@ -6,9 +6,9 @@ int  main() {
     printf("Lutfen matris boyutunu giriniz.: ");
     scanf("%d", &n);
 
-    int pdizi[n][n];
+    int  pdizi[n][n];
 
-    int cikti = 1;
+    int  cikti = 1;
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
             pdizi[i][j] = cikti;
@@ -23,9 +23,8 @@ int  main() {
     printf ("\nMatrisi hangi yone dondurmek istersiniz? Lütfen Sag icin 'a', Sol icin 'b' yaziniz.: ");
     scanf(" %c", &yon);
 
-    // Matrisi secilen yöne göre döndür
     int gecici[n][n];
-    if (yon == 'A' || yon == 'a') {  
+    if  (yon == 'A' || yon == 'a') {  
         for (int i = 0; i < n; ++i) {
             for (int j = 0; j < n; ++j) {
                 gecici[j][n - 1 - i] = pdizi[i][j];
@@ -57,6 +56,8 @@ return 1;    }
         printf("\n");
     }
 
+
     return 0;
+    
 }
 
